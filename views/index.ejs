@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+   <title>Connexion</title>
+  </head>
+  <body>
+    <form method="post" action="" class="center">
+      
+       <% if(user.isAdmin) { %>
+        <p>bibi</p>
+      <% } %>
+        <label for="pseudo" class="ps">Pseudo :</label> <input type="text" name="pseudo" id="pseudo" placeholder="Tapez votre pseudo" />
+        
+        <label for="pass" class="mp">Mot de passe :</label>
+        <input type="password" name="pass" id="pass" placeholder="Tapez votre mot de passe"/>
+        <input class="btn btn-primary" type="submit" name="submit" id="submit" value="Envoyer">
+        <a href="/inscription">Inscription</a>
+      
+  </body>
+</html>
